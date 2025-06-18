@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dobby Mini Unhinged Llama 3.1 8B By SentientAGI: Benchmarks, Features and Detailed Analysis. Insights on Dobby Mini Unhinged Llama 3.1 8B.</title>
+    <meta name="description" content="Details and insights about Dobby Mini Unhinged Llama 3.1 8B LLM by SentientAGI: benchmarks, internals, and performance insights. Features: 8b LLM, VRAM: 16.1GB, Context: 128K, License: llama3.1, Instruction-Based, LLM Explorer Score: 0.34. Find out how Dobby Mini Unhinged Llama 3.1 8B can be utilized in your business workflows, problem-solving, and tackling specific tasks.">
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:site" content="@extractum_io"/>
+    <meta name="twitter:title" content="Dobby Mini Unhinged Llama 3.1 8B By SentientAGI: Benchmarks and Detailed Analysis. Insights on Dobby Mini Unhinged Llama 3.1 8B." />
+    <meta name="twitter:description" content="LLM Card: 8b LLM, VRAM: 16.1GB, Context: 128K, License: llama3.1, Instruction-Based, LLM Explorer Score: 0.34."/>
+    <meta name="twitter:image" content="https://llm-explorer.com/model/SentientAGI%2FDobby-Mini-Unhinged-Llama-3.1-8B,1BFn7yznZT9me9tKeGAC7P?card"/>
+    <meta name="twitter:creator" content="@gregzonx"/>
+    <meta property="og:site_name" content="LLM Explorer"/>
+    <meta property="og:title" content="Dobby Mini Unhinged Llama 3.1 8B By SentientAGI: Benchmarks and Detailed Analysis. Insights on Dobby Mini Unhinged Llama 3.1 8B."/>
+    <meta property="og:type" content="article"/>
+    <meta property="og:image" content="https://llm-explorer.com/model/SentientAGI%2FDobby-Mini-Unhinged-Llama-3.1-8B,1BFn7yznZT9me9tKeGAC7P?card"/>
+    <meta property="og:description" content="LLM Card: 8b LLM, VRAM: 16.1GB, Context: 128K, License: llama3.1, Instruction-Based, LLM Explorer Score: 0.34."/>
+    <meta property="og:locale" content="en_US"/>
+    <meta property="og:url" content="https://llm-explorer.com/model/SentientAGI%2FDobby-Mini-Unhinged-Llama-3.1-8B,1BFn7yznZT9me9tKeGAC7P" />
+    <link rel="canonical" href="https://llm-explorer.com/model/SentientAGI%2FDobby-Mini-Unhinged-Llama-3.1-8B,1BFn7yznZT9me9tKeGAC7P" />
+
+<!--<link rel="stylesheet" href="/css/bootstrap.css">-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"></noscript>
+<!--<link rel="preload" href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'"> -->
+<link rel="preload" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"></noscript>
+
+
+<link rel="stylesheet" href="/css/llm.css?20241124">
+
+<script>
+    let a_tkn = 'ddb4e0609c58e75f972fabebbe26c2a5';
+    const EMPTY_PLACEHOLDER = '&#x2022;';
+
+    // run ad banners
+    document.addEventListener('DOMContentLoaded', function() {
+        startLoadingBannerAds();
+    });
+
+</script>
+
+<script src="/js/llm.js?20241124"></script>
+<script src="/js/llm_chart.js?20241124"></script>
+<script src="/js/statum.js?20241124"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
+<script src="/js/popper.min.js"></script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-SSEC6QC8CL"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-SSEC6QC8CL');
+</script>
+<!-- Google tag (gtag.js) -->
+
+<script>
+    function loadScript( url, callback ) {
+        let script = document.createElement( "script" )
+        script.type = "text/javascript";
+        if(script.readyState) {  // only required for IE <9
+            script.onreadystatechange = function() {
+                if ( script.readyState === "loaded" || script.readyState === "complete" ) {
+                    script.onreadystatechange = null;
+                    callback();
+                }
+            };
+        } else {  //Others
+            script.onload = function() {
+                callback();
+            };
+        }
+
+        script.src = url;
+        document.getElementsByTagName( "head" )[0].appendChild( script );
+    }
+</script>
+
+</head>
+<body>
+<div class="main_div">
+
+    
+<div class="header" style="display: flex; align-items: flex-start; justify-content: space-between; flex-wrap: wrap;">
+    <div class="header-left">
+        <a href="/" class="no_underline"><div class="main_title">LLM E<span class="bg_color">X</span>PLORER</div></a>
+        <a href="/" class="no_underline"><img src="/i/ex.png" style="position: absolute; left: 93px; top: 27px" width="38" height="27" border="0" alt="LLM Explorer: A Curated Large Language Model Directory and Analytics"></a>
+        <!-- Dobby Mini Unhinged Llama 3.1 8B by SentientAGI -->
+        <div class="dark_light"><a rel="noindex" class="mini_button ml-3 dark_link" href="/?dark" target="_blank" alt="Switch to the dark theme">Dark Theme <i class="fa fa-toggle-on" aria-hidden="true"></i></a></div>
+    </div>
+    <div class="main_menu">
+            <a class="mm_item mb-2" href="/list/"><i class="fa fa-sitemap" aria-hidden="true"></i>&nbsp;&nbsp;LLM &nbsp;List</a>
+            <a class="mm_item mb-2 mr-2" href="/gpu-hostings/"><i class="fa fa-server" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;LLM Hosting</a>
+            <a class="mm_item mb-2 mr-2" href="/static/llm-leaderboards/"><i class="fa fa-list" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;LLM Leaderboards</a>
+            <a class="mm_item mb-2 mr-2" href="/static/blog/"><i class="fa fa-book" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;Blog</a>
+            <a class="mm_item mb-2 mr-2" href="/static/llm-news/"><i class="fa fa-bell" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;Newsfeed</a>
+            <a class="mm_item mb-2 mr-2" href="/static/advertisement/"><i class="fa fa-star stars_2" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;Advertise</a>
+    </div>
+</div>
+
+<div class="ad_placeholder"
+     id="main_menu_ad"
+     data-ad-block="stub_menu">
+</div>
+
+    <div class="row">
+        <div class="col-lg-7">
+            <h1>Dobby Mini Unhinged Llama 3.1 8B by SentientAGI</h1>
+            <h2 class="mb-2">
+                <a href="/" target="_blank" rel="nofollow"><span class="fa fa-home"></span></a>
+                &nbsp;»&nbsp;
+                <a href="/list/" target="_blank" rel="nofollow">All LLMs</a>
+                &nbsp;»&nbsp;
+                <a href="/list/?mtr=SentientAGI" target="_blank" rel="nofollow">SentientAGI</a>
+                &nbsp;»&nbsp;
+                <a href="/model/SentientAGI%2FDobby-Mini-Unhinged-Llama-3.1-8B,1BFn7yznZT9me9tKeGAC7P" target="_blank" rel="nofollow" class="mr-2">Dobby Mini Unhinged Llama 3.1 8B</a>
+                <A id="copy_url" content="https://llm-explorer.com/model/SentientAGI%2FDobby-Mini-Unhinged-Llama-3.1-8B,1BFn7yznZT9me9tKeGAC7P"><i class="fa fa-clipboard" aria-hidden="true"></i>&nbsp;&nbsp;URL</A>
+                <i class="fa fa-check-circle" aria-hidden="true" id="copied_ok"></i>
+
+                <span>
+                    <span class="ml-4" style="font-weight: 100">Share it on </span>
+                    <!-- Twitter -->
+                    <a class="mini_button mb-2" href="#" data-link="/link/?link=PThKbnMxSnEwQUpMbEVVcnkxR0xjTWFXMFp3WWpOdkJ5VzNvd0FTVmxJenBpa1RwNElSVkFrUkd0alBNeUFLTFAxdm9peVRxd0lhcDBBYW9XT1BZazRsWnUxSkxma1RWNkgycGhJMkxja1JWZmZSQmxSUVY2RFVyeUVhb2lBUlZmVjBFazR2QWtOdkJBU3hISk9QWUFrUkd0VlRCdGJHRlVTUnFoSUpuMDVKTUdPRnJ2T3ZENE5GWmhaUVZ1MUpMZmtSVnhJMk1oeVRuaElTVmM1Sm5BT0Zydlcyb1IxUXE0SVRxek4xQVFTMEV5Z1JxNUhKbzVEeUpoY0tyMzR6RVBTUVlQdUdZazRsWmdSSm91a1RHZ0RKTWE1Sm5iNUpJZ3h6b2MxSFk1V3pMaUV4RWxIRkZVU1JxaElKbjA1Sk1HOVBveUUyb2c5Rm9pQXpZbEl6cGlrVHA0SUpZZ2tUb2k4dkJtT1VxMHVKQ2ZXS3EvREtNeXFVcWlEYW95RWFvYzlGb2lBellsSVRxMHkycTA5bFk2WlVwMEVVbiEr" onclick="return llmexcl(this)" rel="noindex" target="_blank">
+                        <span class="fa fa-twitter-square twitter_color"></span>
+                    </a>
+
+                    <!-- Reddit -->
+                    <a class="mini_button mb-2" href="#" data-link="/link/?link=PT1ERlVTUnFoSUpuMDVKTUdPRnJ2T3ZENE5GWmhaUVZ1MUpMZmtSVnhJMk1oeVRuaElTVmM1Sm5BT0Zydlcyb1IxR01mRUtuME1QSDNaSERVSTJGMHlHTWd5UUluNXpyNXF3b1RXSFpmVlJCZ1J3WW0wRkxnU1RvWjFQTXlxem9jdXpvSTFGbmh5SkdneGFMdjlURVRXR1dXcUhEMDVKTWNFYW95QTFZZklUTWkxMllnOTJMaFZLTWw5VG9qdUtNZzBUb2Y5bFk2WlVwMEVVbjlqenAxOVFxYzF6TDFBM1lnOTJMaERLbnhFSk1sOWxZNlpVcDBFVW4xfQ==" onclick="return llmexcl(this)" rel="noindex" target="_blank">
+                        <span class="fa fa-reddit-square reddit_color"></span>
+                    </a>
+
+                    <!-- LinkedIn -->
+                    <a class="mini_button mb-2" href="#" data-link="/link/?link=Uk9HV09PR1cwWndZak52QnlXM293QVNWbEl6cGlrVHA0SVJWQWtSR3RqUE15QUtMUDF2b2l5VHF3SWFwMEFhb1dPUFlrNGxadTFKTGZrVFY2SDJwaEkyTGNrUlZmZlJCbFJRVjZEVXJ5RWFvaUFSVmZWMEVrNHZBa052QkFTeEhKT1BZQWtSR3RWVEJ0YkdGVVNScWhJSm4wNUpNR09GcnZPdkQ0TkZaaFpRVnUxSkxma1JWeEkyTWh5VG5oSVNWYzVKbkFPRnJ2VzJvUjFHcmxTSm9nSTNwelZSQnRSd1ltTkZMZ1NUb1pPUE15cXpvY3V6b0lPRm5oeUpHdHhhTHY5VEU5SFRvMHlUcXpOMUFRUzBFeWdScTVISm81RHlKaGNLcjM0ekVQU1FZUHVHWWs0bFpnUkpvdWtUR2dESk1hNUpuYjVKSWd4em9jMUhZNVd6TGlFeEVsSEZGVVNScWhJSm4wNUpNRzlQb3lFMm9nOUZvaUF6WWxJenBpa1RwNElKWWdrVG9pOHZCbU9VcTB1SkNmV0txekhKcWxFS0NjNUpuZzlHTWZBSm4wV0tEeVdLTGJBM1lnOTJMaDRKbnhJMm5oeVRvaHAzcTM5bFk2WlVwMEVVblsz" onclick="return llmexcl(this)" rel="noindex" target="_blank">
+                        <span class="fa fa-linkedin-square linkedin_color"></span>
+                    </a>
+                </span>
+            </h2>
+        </div>
+        <div class="col-lg-5 pt-1">
+             <a href="#" data-link="/link/?link=PTRKbnUxMll5SXpwMDl2RDQwRlpoWkdZdTFKTGZrSFl4STJNaHlUbmhJSVljNUpuQTFGcnZXMm9SOUZGVVNScWhJSm4wNUpNRzlsb3c1Rk13U3pNYTVKbmFxSnFiOWxZNlpVcDBFVW5aLA==" onclick="return llmexcl(this)" rel="noindex" style="text-decoration: none" target="_blank"><span class="mr-3"><i class="fa fa-download" aria-hidden="true"></i>&nbsp;&nbsp;990</span></a>
+             <a class="reaction_control reaction_button reaction_control disabled-link" data-group="model_like" data-block-id="model_likes" data-reaction-id="1" data-obj-id="1BFn7yznZT9me9tKeGAC7P" data-meta="" onclick="vote(this, updateLikes)" title="I like it">
+                 <i class="fa fa-heart red" aria-hidden="true"></i>&nbsp;&nbsp;<span data-likes="43" id="like_count"></span>
+             </a>
+        </div>
+    </div>
+</div>
+<div class="main_div">
+    <div class="mb-4">
+    <a tag_id="Arxiv:2406.14598" target="_blank" href="#" data-link="/link/?link=PXRHQjFER1poTFFaMFZtWW1XSkxpcHpwaTV2cWN1YXB1OWxZNlpVcDBFVW5fWQ==" onclick="return llmexcl(this)" rel="noindex"><span class="common_tag similar_tag"><i class="fa fa-file-pdf-o red" aria-hidden="true"></i>&nbsp;&nbsp;Arxiv:2406.14598</span></a> <a tag_id="Arxiv:2411.03887" target="_blank" href="#" data-link="/link/?link=PXBRQjRaUVpoUkdaMFZtWW1XSkxpcHpwaTV2cWN1YXB1OWxZNlpVcDBFVW5rYA==" onclick="return llmexcl(this)" rel="noindex"><span class="common_tag similar_tag"><i class="fa fa-file-pdf-o red" aria-hidden="true"></i>&nbsp;&nbsp;Arxiv:2411.03887</span></a> <a tag_id="Arxiv:2502.07760" target="_blank" href="#" data-link="/link/?link=PU53QTNwUVpoVlFaMVZtWW1XSkxpcHpwaTV2cWN1YXB1OWxZNlpVcDBFVW4seg==" onclick="return llmexcl(this)" rel="noindex"><span class="common_tag similar_tag"><i class="fa fa-file-pdf-o red" aria-hidden="true"></i>&nbsp;&nbsp;Arxiv:2502.07760</span></a>  <a tag_id="Assistant" target="_blank" href="/list/?tag=Assistant"><span class="common_tag similar_tag"><i class="fa fa-link " aria-hidden="true"></i>&nbsp;&nbsp;Assistant</span></a> <a tag_id="Autotrain compatible" target="_blank" href="/list/?tag=Autotrain compatible"><span class="common_tag similar_tag"><i class="fa fa-link " aria-hidden="true"></i>&nbsp;&nbsp;Autotrain compatible</span></a> <span tag_id="Base model:finetune:meta-llama..." class="common_tag similar_tag">Base model:finetune:meta-llama...</span> <span tag_id="Base model:meta-llama/llama-3...." class="common_tag similar_tag">Base model:meta-llama/llama-3....</span> <a tag_id="Chat" target="_blank" href="/list/?tag=Chat"><span class="common_tag similar_tag"><i class="fa fa-link " aria-hidden="true"></i>&nbsp;&nbsp;Chat</span></a> <a tag_id="Companion" target="_blank" href="/list/?tag=Companion"><span class="common_tag similar_tag"><i class="fa fa-link " aria-hidden="true"></i>&nbsp;&nbsp;Companion</span></a> <a tag_id="Conversational" target="_blank" href="/list/?tag=Conversational"><span class="common_tag similar_tag"><i class="fa fa-link " aria-hidden="true"></i>&nbsp;&nbsp;Conversational</span></a> <a tag_id="En" target="_blank" href="/list/?tag=En"><span class="common_tag similar_tag"><i class="fa fa-link " aria-hidden="true"></i>&nbsp;&nbsp;En</span></a> <a tag_id="Endpoints compatible" target="_blank" href="/list/?tag=Endpoints compatible"><span class="common_tag similar_tag"><i class="fa fa-link " aria-hidden="true"></i>&nbsp;&nbsp;Endpoints compatible</span></a> <a tag_id="Finetuned" target="_blank" href="/list/?tag=Finetuned"><span class="common_tag similar_tag"><i class="fa fa-link " aria-hidden="true"></i>&nbsp;&nbsp;Finetuned</span></a> <a tag_id="Fingerprint" target="_blank" href="/list/?tag=Fingerprint"><span class="common_tag similar_tag"><i class="fa fa-link " aria-hidden="true"></i>&nbsp;&nbsp;Fingerprint</span></a> <a tag_id="Friend" target="_blank" href="/list/?tag=Friend"><span class="common_tag similar_tag"><i class="fa fa-link " aria-hidden="true"></i>&nbsp;&nbsp;Friend</span></a> <a tag_id="Funny" target="_blank" href="/list/?tag=Funny"><span class="common_tag similar_tag"><i class="fa fa-link " aria-hidden="true"></i>&nbsp;&nbsp;Funny</span></a> <a tag_id="Gpt4" target="_blank" href="/list/?tag=Gpt4"><span class="common_tag similar_tag"><i class="fa fa-link " aria-hidden="true"></i>&nbsp;&nbsp;Gpt4</span></a> <a tag_id="Instruct" target="_blank" href="/list/?tag=Instruct"><span class="common_tag similar_tag"><i class="fa fa-link " aria-hidden="true"></i>&nbsp;&nbsp;Instruct</span></a> <a tag_id="Llama" target="_blank" href="/list/?tag=Llama"><span class="common_tag similar_tag"><i class="fa fa-link " aria-hidden="true"></i>&nbsp;&nbsp;Llama</span></a> <a tag_id="Llama-3.1" target="_blank" href="/list/?tag=Llama-3.1"><span class="common_tag similar_tag"><i class="fa fa-link " aria-hidden="true"></i>&nbsp;&nbsp;Llama-3.1</span></a> <a tag_id="Loyal ai" target="_blank" href="/list/?tag=Loyal ai"><span class="common_tag similar_tag"><i class="fa fa-link " aria-hidden="true"></i>&nbsp;&nbsp;Loyal ai</span></a> <a tag_id="Opinionated" target="_blank" href="/list/?tag=Opinionated"><span class="common_tag similar_tag"><i class="fa fa-link " aria-hidden="true"></i>&nbsp;&nbsp;Opinionated</span></a> <a tag_id="Region:us" target="_blank" href="/list/?tag=Region:us"><span class="common_tag similar_tag"><i class="fa fa-link " aria-hidden="true"></i>&nbsp;&nbsp;Region:us</span></a> <a tag_id="Roleplaying" target="_blank" href="/list/?tag=Roleplaying"><span class="common_tag similar_tag"><i class="fa fa-link " aria-hidden="true"></i>&nbsp;&nbsp;Roleplaying</span></a> <a tag_id="Safetensors" target="_blank" href="/list/?tag=Safetensors"><span class="common_tag similar_tag"><i class="fa fa-link " aria-hidden="true"></i>&nbsp;&nbsp;Safetensors</span></a> <a tag_id="Sharded" target="_blank" href="/list/?tag=Sharded"><span class="common_tag similar_tag"><i class="fa fa-link " aria-hidden="true"></i>&nbsp;&nbsp;Sharded</span></a> <a tag_id="Synthetic data" target="_blank" href="/list/?tag=Synthetic data"><span class="common_tag similar_tag"><i class="fa fa-link " aria-hidden="true"></i>&nbsp;&nbsp;Synthetic data</span></a> <a tag_id="Tensorflow" target="_blank" href="/list/?tag=Tensorflow"><span class="common_tag similar_tag"><i class="fa fa-link " aria-hidden="true"></i>&nbsp;&nbsp;Tensorflow</span></a> <a tag_id="Unhinged" target="_blank" href="/list/?tag=Unhinged"><span class="common_tag similar_tag"><i class="fa fa-link " aria-hidden="true"></i>&nbsp;&nbsp;Unhinged</span></a>
+</div>
+<div class="model_segment">
+    <div class="row">
+        <div class="col-lg-7 col-12">
+            <div class="mb-4">Model Card on HF 🤗: <a href="#" data-link="/link/?link=PT10RDQwRlpoWkdZdTFKTGZrSFl4STJNaHlUbmhJSVljNUpuQTFGcnZXMm9SOUZGVVNScWhJSm4wNUpNRzlsb3c1Rk13U3pNYTVKbmFxSnFiOWxZNlpVcDBFVW56bA==" onclick="return llmexcl(this)" rel="noindex" target="_blank"  title="Model Card: /link/?link=PT10RDQwRlpoWkdZdTFKTGZrSFl4STJNaHlUbmhJSVljNUpuQTFGcnZXMm9SOUZGVVNScWhJSm4wNUpNRzlsb3c1Rk13U3pNYTVKbmFxSnFiOWxZNlpVcDBFVW56bA==">https://huggingface.co/SentientAGI/Dobby-Mini-Unhinged-Llama-3.1-8B</a>&nbsp;<i class="fa fa-external-link ml-2 model_td_icon" aria-hidden="true"></i></div>
+                        <h2 class="bench_title mb-3">Dobby Mini Unhinged Llama 3.1 8B Benchmarks</h2>
+            <div class="row model_card_block">
+                <div class="col-lg-7 col-12">
+                    <div class="benchmarks mb-2">        <div class="benchm_container"> 
+        <a target="_blank" href="/list/?benchmark=MMLU_PRO">
+        <div class="benchm_card " title="Mass. Multitask Language Understanding Pro">
+            MMLU Pro:&nbsp;<b>28.72</b>
+        </div>
+    </a><a target="_blank" href="/list/?benchmark=GPQA">
+        <div class="benchm_card " title="General Purpose Question Answering">
+            GPQA:&nbsp;<b>7.49</b>
+        </div>
+    </a><a target="_blank" href="/list/?benchmark=MUSR">
+        <div class="benchm_card " title="Multi-task Unified Skill Representation">
+            MUSR:&nbsp;<b>7.96</b>
+        </div>
+    </a><a target="_blank" href="/list/?benchmark=BBH">
+        <div class="benchm_card " title="Big Bench Hard">
+            BBH:&nbsp;<b>30.37</b>
+        </div>
+    </a><a target="_blank" href="/list/?benchmark=IFEval">
+        <div class="benchm_card " title="Instruction Following Evaluation">
+            IFEval:&nbsp;<b>74.57</b>&nbsp;vs&nbsp;<b>88</b>&nbsp;(so35)<sup><span class="ml-2 decreased_color">-15.3%</span></sup>
+        </div>
+    </a><a target="_blank" href="/list/?benchmark=MATH_Lvl_5">
+        <div class="benchm_card " title="Mathematics Level 5">
+            MATH Lvl 5:&nbsp;<b>15.63</b>
+        </div>
+    </a><a target="_blank" href="/list/?benchmark=calculated_rank">
+        <div class="benchm_card benchm_card_avg" title="LLM Explorer Score">
+            LLME Score:&nbsp;<b>0.34297</b>
+        </div>
+    </a>
+        </div>
+      <div class="font_smaller">
+        <div><sup><span class="ml-2 red">nn.n%</span></sup> &mdash; How the model compares to the reference models: Anthropic Sonnet 3.5 ("so35"), GPT-4o ("gpt4o") or GPT-4 ("gpt4").</div>
+        <div><span class="fa fa-info-circle"></span>&nbsp;What is the <a target="_blank" href="/static/blog/?id=the-llm_explorer-rank">LLM Explorer Rank (Score)</a></div>      
+      </div></div>
+                </div>
+                <div class="col-lg-5 col-12 text-right">
+                        <div class="canvas-container-radar">
+        <canvas id="radarChart" class="canvas-item"></canvas>
+    </div>
+    <script>
+    const data = {
+        labels: ["MUSR","BBH","IFEval","MATH Lvl 5"],
+        datasets: [
+            {
+                label: 'Reference Models',
+                data: [0,0,88,0],
+                backgroundColor: ['#80838630'],
+                borderColor: ['#50505030'],
+                borderWidth: 1
+            },
+            {
+                label: '...Dobby-Mini-Unhinged-Llama-3.1-8B',
+                data: [7.96,30.37,74.57,15.63],
+                backgroundColor: ['#b9a48c50'],
+                borderColor: ['#64534880'],
+                borderWidth: 1
+            }
+        ]
+    };
+    
+    const referenceModels = {"MUSR":null,"BBH":null,"IFEval":"so35","MATH_Lvl_5":null};
+    
+    document.addEventListener('DOMContentLoaded', function() {
+        loadScript('/js/chartjs.min.js', function(){
+            drawRadar(data, referenceModels);
+        });        
+    });    
+    </script>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-5 col-12">
+            <div id="mcard_ad" class="ad_placeholder mt-4" data-ad-block="alphanova">
+                <a href="#" data-link="/link/?link=PVJ6cWk1SkxiT1VvdTlRSDNaSERVSTJGMHlHTWd5UUluNXpyNXF3b1RXSFpmVlJCZ1J3WW0wRkxnU1RvWjFQTXlxem9jdXpvSTFGbmh5SkdneGFMdjlURVRXR1dXcUhEMDVKTWNFYW95QTFZZklUTWkxMllnOTJMaFZLTWw5VG9qdUtNZzBUb2Y5bFk2WlVwMEVVbiV0" onclick="return llmexcl(this)" rel="noindex" target="_blank"><img src="https://llm-explorer.com/model/SentientAGI%2FDobby-Mini-Unhinged-Llama-3.1-8B,1BFn7yznZT9me9tKeGAC7P?alphanova" width=500 height="250"></a>
+            </div>
+            <div class="smallerfont">🌟 <a target="_blank" href="/static/advertisement/">Advertise your project</a> 🚀</div>
+        </div>
+    </div>
+</div>
+<div class="xcontent-block-gradual">
+    <div class="row">
+        <div class="col-lg-7 col-12">
+            <h2 class="bench_title">Dobby Mini Unhinged Llama 3.1 8B Parameters and Internals</h2>
+
+            
+
+            <table class="table table-striped table-sm1">
+                <tbody>
+                <tr><td>LLM Name</td><td><a href="/model/SentientAGI%2FDobby-Mini-Unhinged-Llama-3.1-8B,1BFn7yznZT9me9tKeGAC7P" target="_blank" rel="nofollow" title="LLM Model Name: Dobby Mini Unhinged Llama 3.1 8B">Dobby Mini Unhinged Llama 3.1 8B</a></td></tr><tr><td>Repository 🤗</td><td><a href="#" data-link="/link/?link=PTRKbnUxMll5SXpwMDl2RDQwRlpoWkdZdTFKTGZrSFl4STJNaHlUbmhJSVljNUpuQTFGcnZXMm9SOUZGVVNScWhJSm4wNUpNRzlsb3c1Rk13U3pNYTVKbmFxSnFiOWxZNlpVcDBFVW49dw==" onclick="return llmexcl(this)" rel="noindex" target="_blank"  title="Download Repository: /tree/main">https://huggingface.co/SentientAGI/Dobby-Mini-Unhinged-Llama-3.1-8B</a>&nbsp;<i class="fa fa-external-link ml-2 model_td_icon" aria-hidden="true"></i></td></tr><tr><td>Base Model(s)</td><td style="word-break: break-all; white-space: normal"><span class="mr-3 mb-3"><nobr><i class="fa fa-file-o" aria-hidden="true"></i>&nbsp;&nbsp;meta-llama/Llama-3.1-8B-Instruct</nobr></span>  <span class="mr-3 mb-3"><nobr><i class="fa fa-file-o" aria-hidden="true"></i>&nbsp;&nbsp;<span class="pb-1 pr-1 smallerfont">meta-llama/Llama-3.1-8B-Instruct</span></nobr></span> </td></tr><tr><td>Model Size</td><td>8b</td></tr><tr valign="top"><td>Required VRAM</td><td>16.1&#8239;GB</td></tr><tr><td>Updated</td><td>2025-06-09</td></tr><tr><td>Maintainer</td><td><a target="_blank" href="/list/?mtr=SentientAGI" target="_blank" rel="nofollow" title="Owner and Maintainer: SentientAGI">SentientAGI</a></td></tr><tr><td>Model Type</td><td>llama</td></tr><tr><td>Instruction-Based</td><td>Yes</td></tr><tr><td>Model Files</td><td style="word-break: break-all; white-space: normal"><span class="mr-3 mb-3"><nobr><i class="fa fa-file-code-o" aria-hidden="true"></i>&nbsp;&nbsp;<a href="#" data-link="/link/?link=PVphcGlBYW95RUtNelMycGhEUVpqTlFaZ0wyb2dSUVpqTlFaZ2pKTXg5Sm9pNEpudTEyWXY5VG92OXZENDBGWmhaR1l1MUpMZmtIWXhJMk1oeVRuaElJWWM1Sm5BMUZydlcyb1I5RkZVU1JxaElKbjA1Sk1HOWxvdzVGTXdTek1hNUpuYXFKcWI5bFk2WlVwMEVVblx+" onclick="return llmexcl(this)" rel="noindex" target="_blank"  title="Download model-00001-of-00004.safetensors"><span class="pb-1 pr-1 smallerfont">5.0 GB: 1-of-4</span></a></nobr></span> <span class="mr-3 mb-3"><nobr><i class="fa fa-file-code-o" aria-hidden="true"></i>&nbsp;&nbsp;<a href="#" data-link="/link/?link=PVphcGlBYW95RUtNelMycGhEUVpqTlFaZ0wyb2dWUVpqTlFaZ2pKTXg5Sm9pNEpudTEyWXY5VG92OXZENDBGWmhaR1l1MUpMZmtIWXhJMk1oeVRuaElJWWM1Sm5BMUZydlcyb1I5RkZVU1JxaElKbjA1Sk1HOWxvdzVGTXdTek1hNUpuYXFKcWI5bFk2WlVwMEVVbnx0" onclick="return llmexcl(this)" rel="noindex" target="_blank"  title="Download model-00002-of-00004.safetensors"><span class="pb-1 pr-1 smallerfont">5.0 GB: 2-of-4</span></a></nobr></span> <span class="mr-3 mb-3"><nobr><i class="fa fa-file-code-o" aria-hidden="true"></i>&nbsp;&nbsp;<a href="#" data-link="/link/?link=PVphcGlBYW95RUtNelMycGhEUVpqTlFaZ0wyb2daUVpqTlFaZ2pKTXg5Sm9pNEpudTEyWXY5VG92OXZENDBGWmhaR1l1MUpMZmtIWXhJMk1oeVRuaElJWWM1Sm5BMUZydlcyb1I5RkZVU1JxaElKbjA1Sk1HOWxvdzVGTXdTek1hNUpuYXFKcWI5bFk2WlVwMEVVbmpl" onclick="return llmexcl(this)" rel="noindex" target="_blank"  title="Download model-00003-of-00004.safetensors"><span class="pb-1 pr-1 smallerfont">4.9 GB: 3-of-4</span></a></nobr></span> <span class="mr-3 mb-3"><nobr><i class="fa fa-file-code-o" aria-hidden="true"></i>&nbsp;&nbsp;<a href="#" data-link="/link/?link=PVphcGlBYW95RUtNelMycGhEUVpqTlFaZ0wyb2dEUVpqTlFaZ2pKTXg5Sm9pNEpudTEyWXY5VG92OXZENDBGWmhaR1l1MUpMZmtIWXhJMk1oeVRuaElJWWM1Sm5BMUZydlcyb1I5RkZVU1JxaElKbjA1Sk1HOWxvdzVGTXdTek1hNUpuYXFKcWI5bFk2WlVwMEVVbmk6" onclick="return llmexcl(this)" rel="noindex" target="_blank"  title="Download model-00004-of-00004.safetensors"><span class="pb-1 pr-1 smallerfont">1.2 GB: 4-of-4</span></a></nobr></span> </td></tr><tr><td>Supported Languages</td><td><span class="single_tag">en</span></td></tr><tr><td>Model Architecture</td><td><a target="_blank" href="/list/?ar=LlamaForCausalLM">LlamaForCausalLM</a></td></tr><tr><td>License</td><td>llama3.1</td></tr><tr><td>Context Length</td><td>131072</td></tr><tr><td>Model Max Length</td><td>131072</td></tr><tr><td>Transformers Version</td><td>4.46.1</td></tr><tr><td>Tokenizer Class</td><td>PreTrainedTokenizerFast</td></tr><tr><td>Padding Token</td><td>&lt;|eot_id|&gt;</td></tr><tr><td>Vocabulary Size</td><td>128256</td></tr><tr><td>Torch Data Type</td><td>bfloat16</td></tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col-lg-5 col-12 mb-4">
+            <div id="mcard_ad" class="ad_placeholder" data-ad-block="stub_banner">
+                <a href="#" data-link="/link/?link=eFdLTHc5UUgzWkhEVUkyRjB5R01neVFJbjV6cjVxd29UV0haZlZSQmdSd1ltMEZMZ1NUb1oxUE15cXpvY3V6b0kxRm5oeUpHZ3hhTHY5VEVUV0dXV3FIRDA1Sk1jRWFveUExWWZJVE1pMTJZZzkyTGhWS01sOVRvanVLTWcwVG9mOWxZNlpVcDBFVW4/LQ==" onclick="return llmexcl(this)" rel="noindex" target="_blank" title="Dobby Mini Unhinged Llama 3.1 8B (SentientAGI/Dobby-Mini-Unhinged-Llama-3.1-8B)"><img src="/i/1x1.png" data-src="https://llm-explorer.com/model/SentientAGI%2FDobby-Mini-Unhinged-Llama-3.1-8B,1BFn7yznZT9me9tKeGAC7P?card" class="lazy-load hide-on-mobile img-fluid mb-4 image_card" width=500 height="262" alt="Dobby Mini Unhinged Llama 3.1 8B (SentientAGI/Dobby-Mini-Unhinged-Llama-3.1-8B)" border="0"></a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--<button class="show-expand-btn">Expand&nbsp;&nbsp;<i class="fa fa-expand" aria-hidden="true"></i></button>-->
+
+
+<div class="content-block-gradual">
+    <div class="model_segment"></div>
+    <div class="model_segment">
+            <h2 class="bench_title mb-4">Best Alternatives to Dobby Mini Unhinged Llama 3.1 8B</h2>
+<table class="table table-striped table-sm1">
+    <thead>
+    <tr>
+        <th><div class="model_th">Best Alternatives</div></th>
+        <th><div class="model_th">Context&nbsp;/&nbsp;RAM</div></th>
+        <th><div class="model_th">Downloads</div></th>
+        <th><div class="model_th">Likes</div></th>
+    </tr>
+    </thead>
+    <tbody><tr><td><a href="/model/nvidia%2FLlama-3.1-Nemotron-8B-UltraLong-4M-Instruct,7LFQ0RraDFlQGhAMsroZ5L"  onclick='return smd(a_tkn, this.href)' title="LLM Model Name and Repository: nvidia/Llama-3.1-Nemotron-8B-UltraLong-4M-Instruct">...otron 8B UltraLong 4M Instruct</a></td><td>4192K / 32.1&#8201;GB</td><td>3284</td><td>108</td></tr><tr><td><a href="/model/mergekit-community%2FUltraLong-Thinking,6O8hKZdI9lV5yI7ekVphql"  onclick='return smd(a_tkn, this.href)' title="LLM Model Name and Repository: mergekit-community/UltraLong-Thinking">UltraLong Thinking</a></td><td>4192K / 16.1&#8201;GB</td><td>367</td><td>2</td></tr><tr><td><a href="/model/nvidia%2FLlama-3.1-8B-UltraLong-4M-Instruct,6ZSUiOMWxuHV3YSx5IyBPn"  onclick='return smd(a_tkn, this.href)' title="LLM Model Name and Repository: nvidia/Llama-3.1-8B-UltraLong-4M-Instruct">...a 3.1 8B UltraLong 4M Instruct</a></td><td>4192K / 32.1&#8201;GB</td><td>176</td><td>24</td></tr><tr><td><a href="/model/nvidia%2FLlama-3.1-8B-UltraLong-2M-Instruct,6TdA5K1UYYJDAAcxCiUxXw"  onclick='return smd(a_tkn, this.href)' title="LLM Model Name and Repository: nvidia/Llama-3.1-8B-UltraLong-2M-Instruct">...a 3.1 8B UltraLong 2M Instruct</a></td><td>2096K / 32.1&#8201;GB</td><td>875</td><td>9</td></tr><tr><td><a href="/model/nvidia%2FLlama-3.1-Nemotron-8B-UltraLong-2M-Instruct,Vuaw8bcwJGGRB3se78Dok"  onclick='return smd(a_tkn, this.href)' title="LLM Model Name and Repository: nvidia/Llama-3.1-Nemotron-8B-UltraLong-2M-Instruct">...otron 8B UltraLong 2M Instruct</a></td><td>2096K / 32.1&#8201;GB</td><td>526</td><td>15</td></tr><tr><td><a href="/model/ZeroAgency%2Fzero-llama-3.1-8b-beta6,7CQoTPJt00SnoB709ImpWS"  onclick='return smd(a_tkn, this.href)' title="LLM Model Name and Repository: ZeroAgency/zero-llama-3.1-8b-beta6">Zero Llama 3.1 8B Beta6</a></td><td>1048K / 16.1&#8201;GB</td><td>958</td><td>1</td></tr><tr><td><a href="/model/nvidia%2FLlama-3.1-Nemotron-8B-UltraLong-1M-Instruct,6xAzt5dhM3D6v8yxIJL5RX"  onclick='return smd(a_tkn, this.href)' title="LLM Model Name and Repository: nvidia/Llama-3.1-Nemotron-8B-UltraLong-1M-Instruct">...otron 8B UltraLong 1M Instruct</a></td><td>1048K / 32.1&#8201;GB</td><td>1808</td><td>45</td></tr><tr><td><a href="/model/nvidia%2FLlama-3.1-8B-UltraLong-1M-Instruct,5PBbunvzCzzV9LqiAWItwC"  onclick='return smd(a_tkn, this.href)' title="LLM Model Name and Repository: nvidia/Llama-3.1-8B-UltraLong-1M-Instruct">...a 3.1 8B UltraLong 1M Instruct</a></td><td>1048K / 32.1&#8201;GB</td><td>1387</td><td>29</td></tr><tr><td><a href="/model/DavidAU%2FLlama-3.1-1million-ctx-Dark-Planet-8B,1Yh9KQr9T6qmOjx1qbxM8l"  onclick='return smd(a_tkn, this.href)' title="LLM Model Name and Repository: DavidAU/Llama-3.1-1million-ctx-Dark-Planet-8B">....1 1million Ctx Dark Planet 8B</a></td><td>1048K / 32.3&#8201;GB</td><td>90</td><td>2</td></tr><tr><td><a href="/model/maldv%2Fbadger-nu-llama-3.1-8B-UltraLong,1YVJAepXPP0GRU2XqDgmyD"  onclick='return smd(a_tkn, this.href)' title="LLM Model Name and Repository: maldv/badger-nu-llama-3.1-8B-UltraLong">...dger Nu Llama 3.1 8B UltraLong</a></td><td>1048K / 16.2&#8201;GB</td><td>30</td><td>3</td></tr></tbody></table>
+    </div>
+</div>
+<button class="show-expand-btn">Expand&nbsp;&nbsp;<i class="fa fa-expand" aria-hidden="true"></i></button>
+
+<div class="content-block-gradual">
+    <div class="model_segment">
+        <div class="model_segment rank_table_width">
+            <h2 class="bench_title">Rank the Dobby Mini Unhinged Llama 3.1 8B Capabilities</h2>
+            <p class="model_description">🆘&nbsp;Have you tried this model? Rate its performance. This feedback would greatly assist ML community in identifying the most suitable model for their needs. Your contribution really does make a difference! 🌟</p>
+            <table class="table table-striped table-sm1">
+                <tr><td width="300">Instruction Following and Task Automation&nbsp;&nbsp;</td>
+                    <td width="110">
+                        <div id="res_1BFn7yznZT9me9tKeGAC7P_instruct"></div>
+                    </td>
+                    <td width="110">
+                        <a class="hide_react useful_q reaction_control reaction_button disabled-link mr-2" data-group="model_cap_rank" data-block-id="model_cap_rank"
+                           data-reaction-id="1" data-obj-id="1BFn7yznZT9me9tKeGAC7P_instruct" data-meta=""
+                           onclick="vote(this, updateStars)" title="The capability is weak, model perform poorly"><span class="fa fa-thumbs-o-down"></span><span class="fa fa-thumbs-o-down"></span></a>
+                        <a class="hide_react useful_q reaction_control reaction_button disabled-link mr-2" data-group="model_cap_rank" data-block-id="model_cap_rank"
+                           data-reaction-id="2" data-obj-id="1BFn7yznZT9me9tKeGAC7P_instruct" data-meta=""
+                           onclick="vote(this, updateStars)" title="The capability is weak, model perform poorly"><span class="fa fa-thumbs-o-down"></span></a>
+                        <a class="hide_react useful_q reaction_control reaction_button disabled-link mr-2" data-group="model_cap_rank" data-block-id="model_cap_rank"
+                           data-reaction-id="3" data-obj-id="1BFn7yznZT9me9tKeGAC7P_instruct" data-meta=""
+                           onclick="vote(this, updateStars)" title="The capability is fairly good"><span class="fa fa-thumbs-o-up"></span></a>
+                        <a class="hide_react useful_q reaction_control reaction_button disabled-link mr-2" data-group="model_cap_rank" data-block-id="model_cap_rank"
+                           data-reaction-id="4" data-obj-id="1BFn7yznZT9me9tKeGAC7P_instruct" data-meta=""
+                           onclick="vote(this, updateStars)" title="The capability is great, model performs great at that"><span class="fa fa-thumbs-o-up"></span><span class="fa fa-thumbs-o-up"></span></a>
+                    </td>
+                </tr><tr><td width="300">Factuality and Completeness of Knowledge&nbsp;&nbsp;</td>
+                    <td width="110">
+                        <div id="res_1BFn7yznZT9me9tKeGAC7P_factual"></div>
+                    </td>
+                    <td width="110">
+                        <a class="hide_react useful_q reaction_control reaction_button disabled-link mr-2" data-group="model_cap_rank" data-block-id="model_cap_rank"
+                           data-reaction-id="1" data-obj-id="1BFn7yznZT9me9tKeGAC7P_factual" data-meta=""
+                           onclick="vote(this, updateStars)" title="The capability is weak, model perform poorly"><span class="fa fa-thumbs-o-down"></span><span class="fa fa-thumbs-o-down"></span></a>
+                        <a class="hide_react useful_q reaction_control reaction_button disabled-link mr-2" data-group="model_cap_rank" data-block-id="model_cap_rank"
+                           data-reaction-id="2" data-obj-id="1BFn7yznZT9me9tKeGAC7P_factual" data-meta=""
+                           onclick="vote(this, updateStars)" title="The capability is weak, model perform poorly"><span class="fa fa-thumbs-o-down"></span></a>
+                        <a class="hide_react useful_q reaction_control reaction_button disabled-link mr-2" data-group="model_cap_rank" data-block-id="model_cap_rank"
+                           data-reaction-id="3" data-obj-id="1BFn7yznZT9me9tKeGAC7P_factual" data-meta=""
+                           onclick="vote(this, updateStars)" title="The capability is fairly good"><span class="fa fa-thumbs-o-up"></span></a>
+                        <a class="hide_react useful_q reaction_control reaction_button disabled-link mr-2" data-group="model_cap_rank" data-block-id="model_cap_rank"
+                           data-reaction-id="4" data-obj-id="1BFn7yznZT9me9tKeGAC7P_factual" data-meta=""
+                           onclick="vote(this, updateStars)" title="The capability is great, model performs great at that"><span class="fa fa-thumbs-o-up"></span><span class="fa fa-thumbs-o-up"></span></a>
+                    </td>
+                </tr><tr><td width="300">Censorship and Alignment&nbsp;&nbsp;</td>
+                    <td width="110">
+                        <div id="res_1BFn7yznZT9me9tKeGAC7P_censor"></div>
+                    </td>
+                    <td width="110">
+                        <a class="hide_react useful_q reaction_control reaction_button disabled-link mr-2" data-group="model_cap_rank" data-block-id="model_cap_rank"
+                           data-reaction-id="1" data-obj-id="1BFn7yznZT9me9tKeGAC7P_censor" data-meta=""
+                           onclick="vote(this, updateStars)" title="The capability is weak, model perform poorly"><span class="fa fa-thumbs-o-down"></span><span class="fa fa-thumbs-o-down"></span></a>
+                        <a class="hide_react useful_q reaction_control reaction_button disabled-link mr-2" data-group="model_cap_rank" data-block-id="model_cap_rank"
+                           data-reaction-id="2" data-obj-id="1BFn7yznZT9me9tKeGAC7P_censor" data-meta=""
+                           onclick="vote(this, updateStars)" title="The capability is weak, model perform poorly"><span class="fa fa-thumbs-o-down"></span></a>
+                        <a class="hide_react useful_q reaction_control reaction_button disabled-link mr-2" data-group="model_cap_rank" data-block-id="model_cap_rank"
+                           data-reaction-id="3" data-obj-id="1BFn7yznZT9me9tKeGAC7P_censor" data-meta=""
+                           onclick="vote(this, updateStars)" title="The capability is fairly good"><span class="fa fa-thumbs-o-up"></span></a>
+                        <a class="hide_react useful_q reaction_control reaction_button disabled-link mr-2" data-group="model_cap_rank" data-block-id="model_cap_rank"
+                           data-reaction-id="4" data-obj-id="1BFn7yznZT9me9tKeGAC7P_censor" data-meta=""
+                           onclick="vote(this, updateStars)" title="The capability is great, model performs great at that"><span class="fa fa-thumbs-o-up"></span><span class="fa fa-thumbs-o-up"></span></a>
+                    </td>
+                </tr><tr><td width="300">Data Analysis and Insight Generation&nbsp;&nbsp;</td>
+                    <td width="110">
+                        <div id="res_1BFn7yznZT9me9tKeGAC7P_dataanal"></div>
+                    </td>
+                    <td width="110">
+                        <a class="hide_react useful_q reaction_control reaction_button disabled-link mr-2" data-group="model_cap_rank" data-block-id="model_cap_rank"
+                           data-reaction-id="1" data-obj-id="1BFn7yznZT9me9tKeGAC7P_dataanal" data-meta=""
+                           onclick="vote(this, updateStars)" title="The capability is weak, model perform poorly"><span class="fa fa-thumbs-o-down"></span><span class="fa fa-thumbs-o-down"></span></a>
+                        <a class="hide_react useful_q reaction_control reaction_button disabled-link mr-2" data-group="model_cap_rank" data-block-id="model_cap_rank"
+                           data-reaction-id="2" data-obj-id="1BFn7yznZT9me9tKeGAC7P_dataanal" data-meta=""
+                           onclick="vote(this, updateStars)" title="The capability is weak, model perform poorly"><span class="fa fa-thumbs-o-down"></span></a>
+                        <a class="hide_react useful_q reaction_control reaction_button disabled-link mr-2" data-group="model_cap_rank" data-block-id="model_cap_rank"
+                           data-reaction-id="3" data-obj-id="1BFn7yznZT9me9tKeGAC7P_dataanal" data-meta=""
+                           onclick="vote(this, updateStars)" title="The capability is fairly good"><span class="fa fa-thumbs-o-up"></span></a>
+                        <a class="hide_react useful_q reaction_control reaction_button disabled-link mr-2" data-group="model_cap_rank" data-block-id="model_cap_rank"
+                           data-reaction-id="4" data-obj-id="1BFn7yznZT9me9tKeGAC7P_dataanal" data-meta=""
+                           onclick="vote(this, updateStars)" title="The capability is great, model performs great at that"><span class="fa fa-thumbs-o-up"></span><span class="fa fa-thumbs-o-up"></span></a>
+                    </td>
+                </tr><tr><td width="300">Text Generation&nbsp;&nbsp;</td>
+                    <td width="110">
+                        <div id="res_1BFn7yznZT9me9tKeGAC7P_textgen"></div>
+                    </td>
+                    <td width="110">
+                        <a class="hide_react useful_q reaction_control reaction_button disabled-link mr-2" data-group="model_cap_rank" data-block-id="model_cap_rank"
+                           data-reaction-id="1" data-obj-id="1BFn7yznZT9me9tKeGAC7P_textgen" data-meta=""
+                           onclick="vote(this, updateStars)" title="The capability is weak, model perform poorly"><span class="fa fa-thumbs-o-down"></span><span class="fa fa-thumbs-o-down"></span></a>
+                        <a class="hide_react useful_q reaction_control reaction_button disabled-link mr-2" data-group="model_cap_rank" data-block-id="model_cap_rank"
+                           data-reaction-id="2" data-obj-id="1BFn7yznZT9me9tKeGAC7P_textgen" data-meta=""
+                           onclick="vote(this, updateStars)" title="The capability is weak, model perform poorly"><span class="fa fa-thumbs-o-down"></span></a>
+                        <a class="hide_react useful_q reaction_control reaction_button disabled-link mr-2" data-group="model_cap_rank" data-block-id="model_cap_rank"
+                           data-reaction-id="3" data-obj-id="1BFn7yznZT9me9tKeGAC7P_textgen" data-meta=""
+                           onclick="vote(this, updateStars)" title="The capability is fairly good"><span class="fa fa-thumbs-o-up"></span></a>
+                        <a class="hide_react useful_q reaction_control reaction_button disabled-link mr-2" data-group="model_cap_rank" data-block-id="model_cap_rank"
+                           data-reaction-id="4" data-obj-id="1BFn7yznZT9me9tKeGAC7P_textgen" data-meta=""
+                           onclick="vote(this, updateStars)" title="The capability is great, model performs great at that"><span class="fa fa-thumbs-o-up"></span><span class="fa fa-thumbs-o-up"></span></a>
+                    </td>
+                </tr><tr><td width="300">Text Summarization and Feature Extraction&nbsp;&nbsp;</td>
+                    <td width="110">
+                        <div id="res_1BFn7yznZT9me9tKeGAC7P_textsum"></div>
+                    </td>
+                    <td width="110">
+                        <a class="hide_react useful_q reaction_control reaction_button disabled-link mr-2" data-group="model_cap_rank" data-block-id="model_cap_rank"
+                           data-reaction-id="1" data-obj-id="1BFn7yznZT9me9tKeGAC7P_textsum" data-meta=""
+                           onclick="vote(this, updateStars)" title="The capability is weak, model perform poorly"><span class="fa fa-thumbs-o-down"></span><span class="fa fa-thumbs-o-down"></span></a>
+                        <a class="hide_react useful_q reaction_control reaction_button disabled-link mr-2" data-group="model_cap_rank" data-block-id="model_cap_rank"
+                           data-reaction-id="2" data-obj-id="1BFn7yznZT9me9tKeGAC7P_textsum" data-meta=""
+                           onclick="vote(this, updateStars)" title="The capability is weak, model perform poorly"><span class="fa fa-thumbs-o-down"></span></a>
+                        <a class="hide_react useful_q reaction_control reaction_button disabled-link mr-2" data-group="model_cap_rank" data-block-id="model_cap_rank"
+                           data-reaction-id="3" data-obj-id="1BFn7yznZT9me9tKeGAC7P_textsum" data-meta=""
+                           onclick="vote(this, updateStars)" title="The capability is fairly good"><span class="fa fa-thumbs-o-up"></span></a>
+                        <a class="hide_react useful_q reaction_control reaction_button disabled-link mr-2" data-group="model_cap_rank" data-block-id="model_cap_rank"
+                           data-reaction-id="4" data-obj-id="1BFn7yznZT9me9tKeGAC7P_textsum" data-meta=""
+                           onclick="vote(this, updateStars)" title="The capability is great, model performs great at that"><span class="fa fa-thumbs-o-up"></span><span class="fa fa-thumbs-o-up"></span></a>
+                    </td>
+                </tr><tr><td width="300">Code Generation&nbsp;&nbsp;</td>
+                    <td width="110">
+                        <div id="res_1BFn7yznZT9me9tKeGAC7P_codegen"></div>
+                    </td>
+                    <td width="110">
+                        <a class="hide_react useful_q reaction_control reaction_button disabled-link mr-2" data-group="model_cap_rank" data-block-id="model_cap_rank"
+                           data-reaction-id="1" data-obj-id="1BFn7yznZT9me9tKeGAC7P_codegen" data-meta=""
+                           onclick="vote(this, updateStars)" title="The capability is weak, model perform poorly"><span class="fa fa-thumbs-o-down"></span><span class="fa fa-thumbs-o-down"></span></a>
+                        <a class="hide_react useful_q reaction_control reaction_button disabled-link mr-2" data-group="model_cap_rank" data-block-id="model_cap_rank"
+                           data-reaction-id="2" data-obj-id="1BFn7yznZT9me9tKeGAC7P_codegen" data-meta=""
+                           onclick="vote(this, updateStars)" title="The capability is weak, model perform poorly"><span class="fa fa-thumbs-o-down"></span></a>
+                        <a class="hide_react useful_q reaction_control reaction_button disabled-link mr-2" data-group="model_cap_rank" data-block-id="model_cap_rank"
+                           data-reaction-id="3" data-obj-id="1BFn7yznZT9me9tKeGAC7P_codegen" data-meta=""
+                           onclick="vote(this, updateStars)" title="The capability is fairly good"><span class="fa fa-thumbs-o-up"></span></a>
+                        <a class="hide_react useful_q reaction_control reaction_button disabled-link mr-2" data-group="model_cap_rank" data-block-id="model_cap_rank"
+                           data-reaction-id="4" data-obj-id="1BFn7yznZT9me9tKeGAC7P_codegen" data-meta=""
+                           onclick="vote(this, updateStars)" title="The capability is great, model performs great at that"><span class="fa fa-thumbs-o-up"></span><span class="fa fa-thumbs-o-up"></span></a>
+                    </td>
+                </tr><tr><td width="300">Multi-Language Support and Translation&nbsp;&nbsp;</td>
+                    <td width="110">
+                        <div id="res_1BFn7yznZT9me9tKeGAC7P_multilang"></div>
+                    </td>
+                    <td width="110">
+                        <a class="hide_react useful_q reaction_control reaction_button disabled-link mr-2" data-group="model_cap_rank" data-block-id="model_cap_rank"
+                           data-reaction-id="1" data-obj-id="1BFn7yznZT9me9tKeGAC7P_multilang" data-meta=""
+                           onclick="vote(this, updateStars)" title="The capability is weak, model perform poorly"><span class="fa fa-thumbs-o-down"></span><span class="fa fa-thumbs-o-down"></span></a>
+                        <a class="hide_react useful_q reaction_control reaction_button disabled-link mr-2" data-group="model_cap_rank" data-block-id="model_cap_rank"
+                           data-reaction-id="2" data-obj-id="1BFn7yznZT9me9tKeGAC7P_multilang" data-meta=""
+                           onclick="vote(this, updateStars)" title="The capability is weak, model perform poorly"><span class="fa fa-thumbs-o-down"></span></a>
+                        <a class="hide_react useful_q reaction_control reaction_button disabled-link mr-2" data-group="model_cap_rank" data-block-id="model_cap_rank"
+                           data-reaction-id="3" data-obj-id="1BFn7yznZT9me9tKeGAC7P_multilang" data-meta=""
+                           onclick="vote(this, updateStars)" title="The capability is fairly good"><span class="fa fa-thumbs-o-up"></span></a>
+                        <a class="hide_react useful_q reaction_control reaction_button disabled-link mr-2" data-group="model_cap_rank" data-block-id="model_cap_rank"
+                           data-reaction-id="4" data-obj-id="1BFn7yznZT9me9tKeGAC7P_multilang" data-meta=""
+                           onclick="vote(this, updateStars)" title="The capability is great, model performs great at that"><span class="fa fa-thumbs-o-up"></span><span class="fa fa-thumbs-o-up"></span></a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+<button class="show-expand-btn">Expand&nbsp;&nbsp;<i class="fa fa-expand" aria-hidden="true"></i></button>
+
+
+    <div style="width: 50%;"><h2 class="mb-3" style="font-size: 15px; font-weight: 100; margin-left: 5px;">What open-source LLMs or SLMs are you in search of? 48046 in total.</h2>
+<div class="mb-4 search_div">
+    <input type="text" name="query" id="search_input" placeholder="" autocomplete="off">
+    <button class="mm_button" id="search_button"><span class="fa fa-search mr-1"></span>&nbsp;&nbsp;&nbsp;Search</button>
+</div>
+<div id="search_hints"></div>
+</div>
+
+    <script>
+// TODO: check if it's obsolete
+$('[data-toggle="collapse"]').on('click', function() {
+  let item = $(this);
+  item.find('i').toggleClass('fa-plus-circle fa-minus-circle');
+});
+
+
+// ----------------------------------------------------------------------------------------------------------
+function handle_url_copy() {
+    new ClipboardJS('#copy_url', {
+        text: function(trigger) {
+            let o = document.getElementById('copied_ok');
+            o.style.display = 'inline';
+            setTimeout(function() {
+                o.style.display = 'none';
+            }, 2000);
+            return trigger.getAttribute('content');
+        }
+    });
+}
+
+// ----------------------------------------------------------------------------------------------------------
+// the reaction block
+const react_obj_list = ['1BFn7yznZT9me9tKeGAC7P_instruct','1BFn7yznZT9me9tKeGAC7P_factual','1BFn7yznZT9me9tKeGAC7P_censor','1BFn7yznZT9me9tKeGAC7P_dataanal','1BFn7yznZT9me9tKeGAC7P_textgen','1BFn7yznZT9me9tKeGAC7P_textsum','1BFn7yznZT9me9tKeGAC7P_codegen','1BFn7yznZT9me9tKeGAC7P_multilang'];
+const model_uid = '1BFn7yznZT9me9tKeGAC7P';
+
+function generateSimpleStars(avgRating, disabled = true) {
+    let html = '';
+    let starsCount = 0;
+
+    // Map the avgRating to the number of stars
+    if (avgRating >= 0 && avgRating <= 1.0) {
+        starsCount = 1;
+    } else if (avgRating > 1.0 && avgRating <= 2.0) {
+        starsCount = 2;
+    } else if (avgRating > 2.0 && avgRating <= 3.0) {
+        starsCount = 3;
+    } else if (avgRating > 3.0 && avgRating <= 4) {
+        starsCount = 4;
+    }
+
+    // Generate stars HTML based on starsCount
+    for (let i = 0; i < starsCount; i++) {
+        if (disabled) {
+            html += '<i class="mr-1 stars_disabled">●</i>';
+        } else {
+            html += '<i class="mr-1 stars_' + starsCount + '">●</i>';
+        }
+    }
+
+    // Ensure the total count is 4 by adding empty stars if necessary
+    for (let i = starsCount; i < 4; i++) {
+        html += '<i class="mr-1" class="stars_disabled">●</i>';
+    }
+
+    return html;
+}
+
+// ----------------------------------------------------------------------------------------------------------
+function updateLikes(status, data, action = '') {
+    let like_obj = document.getElementById('like_count')
+    let likes_count = Number.parseFloat(like_obj.getAttribute('data-likes'));
+    like_obj.innerText = likes_count + "";
+
+    if (!status || !data['stats'] || data['stats'].length == 0) {
+        return;
+    }
+
+    // single like was removed
+    if (data['stats'][0]['deleted']) {
+        return;
+    }
+
+    // increment the number of likes by the number of votes
+    like_obj.innerText = (Number.parseFloat(data['stats'][0]['num_r']) + likes_count) + "";
+}
+
+// ----------------------------------------------------------------------------------------------------------
+function updateStars(status, data, action = '') {
+    if (!status || !data['stats'] || data['stats'].length == 0) {
+        return;
+    }
+
+    let stats = data['stats'];
+
+    // iterate thru the lst of objects and t=find those which have votes, otherwise clear them
+    for (let j = 0; j < stats.length; j++) {
+        if (stats[j]['deleted']) {
+            document.getElementById('res_' + stats[j]['r_obj']).innerHTML = '<span class="stars_disabled">' + generateSimpleStars(0.0, true) + '</span>';
+        } else {
+            document.getElementById('res_' + stats[j]['r_obj']).innerHTML = '<span class="stars_disabled">' + generateSimpleStars(stats[j]['avg_r'], false) + '</span>';
+        }
+    }
+}
+
+// ----------------------------------------------------------------------------------------------------------
+document.addEventListener('DOMContentLoaded', function() {
+    disableButtons('model_cap_rank', react_obj_list, true);
+
+    for (let i = 0; i < react_obj_list.length; i++) {
+        // clear stars if the object absent
+        document.getElementById('res_' + react_obj_list[i]).innerHTML = '<span class="stars_disabled">' + generateSimpleStars(0.0, true) + '</span>';
+    }
+
+    // load the stars
+    load_reacts('model_cap_rank', react_obj_list, function(status, data) {
+        disableButtons('model_cap_rank', react_obj_list, false);
+        updateStars(status, data);
+    });
+
+    disableButtons('model_likes', model_uid, true);
+
+    // load the likes
+    load_reacts('model_likes', model_uid, function(status, data) {
+        disableButtons('model_likes', model_uid, false);
+        updateLikes(status, data);
+    });
+
+    loadScript('/js/clipboard.min.js', function(){
+        handle_url_copy();
+    });
+});
+
+// ----------------------------------------------------------------------------------------------------------
+</script>
+
+
+
+    <div data-storage-item="llm_extractum_cookiename" data-nosnippet>
+    <div>
+        <div class="llm_cookie_text"></div>
+        <button type="button" class="llm_close_button aria-label="Close notification"><svg role="presentation" width="10" height="10" viewBox="0 0 23 23" xmlns="http://www.w3.org/2000/svg"><desc>Close</desc><g fill="#000" fill-rule="evenodd"><path d="M2e-7 1.41421306L1.41421378-5e-7l21.21320344 21.21320344-1.41421357 1.41421356z"></path><path d="M21.21320294 2e-7l1.41421356 1.41421357L1.41421306 22.62741721-5e-7 21.21320364z"></path></g></svg></button>
+    </div>
+</div>
+
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <div class="mb-4" id="notification-message"></div>
+        <button id="close-button" class="back_button"><span class="fa fa-times"></span>&nbsp;Close</button>
+    </div>
+</div>
+
+<div id="modelDetails" class="modal">
+    <div class="modal-content-iframe">
+        <span class="close-icon">&times;</span>
+        <div id="iframe-content"></div>
+        <button id="iframe-close-button" class="back_button"><span class="fa fa-times"></span>&nbsp;Close</button>
+    </div>
+</div>
+
+<div class="small mb-4" style="margin-top: 60px;">
+    <div class="mb-2">Email us: <a href="mailto:info@extractum.io"  target="_blank">info@extractum.io</a>. Our <a href="#" data-link="/link/?link=aXgzTGNrMm9qMUZyd1N6cWNXVXBpOEpuaDBKcTBBSkxsRVVyeTlsWTZaVXAwRVVuJmM=" onclick="return llmexcl(this)" rel="noindex">Privacy Policy</a>&nbsp;&nbsp;| <a href="#" data-link="/link/?link=PWpKbzB1elltMXpweUUzWW1JMk11TzNZZzkyTGhWS01sOVRvanVLTWcwVG9mOWxZNlpVcDBFVW4wcQ==" onclick="return llmexcl(this)" rel="noindex">Terms and Conditions</a>&nbsp;&nbsp;| <a href="#" data-link="/link/?link=PXR3b0dTeUhRY0lKM1YzRjZFMHFLNXhuaUhUb2E1bHBnVzNvejlsWTZaVXAwRVVuSk0=" onclick="return llmexcl(this)" rel="noindex" target="_blank">Suggest an improvement</a>.</div>
+    <div>
+        <span style="font-size: 14px;">Our Social Media &rarr;&nbsp;&nbsp;</span>
+        <span class="big_icons">
+                                    <a class="mini_button mb-2" href="#" data-link="/link/?link=PT1qWXhJVHF1RVRwMTlJb2ZrMllsOUZvaUF6WTB5VE14SXpwaHAzcTM5bFk2WlVwMEVVbkZn" onclick="return llmexcl(this)" rel="noindex" target="_blank" alt="LLM Explorer Subreddit"><i class="fa fa-reddit reddit_color" aria-hidden="true"></i></a>
+                                    <a class="mini_button mb-2" href="#" data-link="/link/?link=aXlKWWdJVXF3U3pwMHVLTWl4YW91T0tvaUEyWWc5MkxoNEpueEkybmh5VG9ocDNxMzlsWTZaVXAwRVVuM0U=" onclick="return llmexcl(this)" rel="noindex" target="_blank" alt="LLM Explorer LinkedIn"><i class="fa fa-linkedin-square linkedin_color" aria-hidden="true"></i></a>
+                                    <a class="mini_button mb-2" href="#" data-link="/link/?link=PThKbnMxSnEwQUpMbEVVcnk5Rm9pQXpZbElUcTB5MnEwOWxZNlpVcDBFVW5KQg==" onclick="return llmexcl(this)" rel="noindex" target="_blank" alt="LLM Explorer X / Twitter"><i class="fa fa-twitter twitter_color" aria-hidden="true"></i></a>
+                                </span>
+    </div>
+
+    <div>Original data from <a href="#" data-link="/link/?link=PThsb3c1Rk13U3pNYTVKbmFxSnFiOWxZNlpVcDBFVW58KQ==" onclick="return llmexcl(this)" rel="noindex" target="_blank">HuggingFace</a>, <a href="#" data-link="/link/?link=aTQyTGhwenBpNWxwbVNUcGc5MkxoSVRwaTlsWTZaVXAwRVVuKm0=" onclick="return llmexcl(this)" rel="noindex" target="_blank">OpenCompass</a> and various public git repos.</div>
+
+    <script>
+        // ----------------------------------------------------------------------------------------------------------
+        $(document).ready(function() {
+            gtag('js', new Date());
+            gtag('config', 'G-SSEC6QC8CL');
+
+            documentReady();
+        });
+
+
+    </script>
+
+    <script type="text/javascript"> window.$crisp=[];window.CRISP_WEBSITE_ID="30d005d3-5549-4b84-9e4c-1a4a1d62ed73";(function(){ d=document;s=d.createElement("script"); s.src="https://client.crisp.chat/l.js"; s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})(); </script>
+
+    <div class="smallerfont mt-4">Release v20241124</div>
+
+    <div class="mt-4">
+        <a  class="back_button" href="#" data-link="/link/?link=PTAybjF4YW4xeDFvNHB3bzI4eHEzcFRaajhGb2lBell5T0tubEUzcGhIVHF1NTJveDlsWTZaVXAwRVVuXXQ=" onclick="return llmexcl(this)" rel="noindex" target="_blank"><i class="fa fa-money" aria-hidden="true"></i>&nbsp;&nbsp;Support LLM Explorer</a>
+    </div>
+
+</div>
+</div>
+
+</body>
+</html>
