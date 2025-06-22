@@ -1,0 +1,1 @@
+All the notes are in the jupyter notebook I made for this chapter.
